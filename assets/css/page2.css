@@ -1,0 +1,43 @@
+.my-works {
+    min-height: 841px;
+}
+
+.projects {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 650px;
+    padding-left: 21px;
+}
+
+.main-content_block .projects .project {
+    display: inline-block;
+    border: 2px solid #3ba8c0;
+    height: 125px;
+    width: 180px;
+    border-radius: 5%;
+    margin-right: 30px;
+    margin-bottom: 45px;
+}
+
+.project1 {
+    background: url(../img/project1.png) no-repeat;
+}
+
+.project2 {
+    background: url(../img/project2.png) no-repeat;
+}
+
+.project3 {
+    background: url(../img/Project3.png) no-repeat;
+}
+
+.project4 {
+    background: url(../img/Project4.png) no-repeat;
+}
+
+.main-content_block .projects .add-new-project {
+    border: 2px dotted #3ba8c0;
+}
