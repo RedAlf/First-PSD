@@ -39,6 +39,8 @@ body {
 }
 
 .header {
+    display: flex;
+    justify-content: space-between;
     background: #eff3f7;
     height: 76px;
     margin: 0;
@@ -69,9 +71,7 @@ body {
     margin: 0px;
     list-style: none;
     float: right;
-    margin-top: -55px;
     margin-right: 75px;
-    margin-left: 360px;
 }
 
 .social li {
@@ -167,6 +167,8 @@ body {
 }
 
 .footer {
+    display:flex;
+    justify-content: center;
     height: 50px;
     width: 100%;
     background: #eff3f7;
@@ -179,19 +181,16 @@ body {
     font-family: "FiraSans";
 }
 
-.footer span {
-    margin-left: -270px;
-}
-
 .footer_login {
     height: 33px;
     width: 20px;
     background: url(../img/login.png) no-repeat;
-    margin-left: 250px;
-    float: left;
+    position: absolute;
+    left: 250px;
 }
 
 .footer_login:hover {
+    background: url(../img/login-complete.png) no-repeat;
     cursor: pointer;
 }
 
@@ -210,9 +209,12 @@ body {
     clear: both;
 }
 
+.main-flexbox {
+    display:flex;
+    justify-content: center;
+}
+
 .main-content {
-    margin-left: 220px;
-    margin-top: 40px;
     width: 960px;
     margin-bottom: 40px;
     min-height: 460px;
@@ -235,6 +237,8 @@ body {
     height: 50px;
     padding-top: 10px;
     margin-bottom: 25px;
+
+
 }
 
 .main-content_main-info_avatar {
