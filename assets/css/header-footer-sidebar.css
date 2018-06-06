@@ -17,7 +17,7 @@ body {
     margin: 0;
     margin-bottom: 23px;
     margin-right: 60px;
-    border-radius: 5%;
+    border-radius: 4px;
 }
 
 .menu a {
@@ -34,6 +34,7 @@ body {
 .menu .active {
     background: #3ba8c0;
     color: #ffffff;
+    cursor: pointer;
 }
 
 .menu a.inactive:hover {
@@ -81,6 +82,12 @@ body {
     height: 50px;
     display: inline-block;
     margin-right: 25px;
+}
+
+.social a {
+    display: block;
+    width: 50px;
+    height: 50px;
 }
 
 .vk {
@@ -133,7 +140,7 @@ body {
     color: rgb(251, 252, 253);
     background: #3ba8c0;
     padding-left: 21px;
-    border-radius: 5% 5% 0 0;
+    border-radius: 4px 4px 0 0;
 }
 
 .contacts .contacts_head:hover {
@@ -157,7 +164,7 @@ body {
     font-size: 17px;
     color: #ffffff;
     background: url(../img/skype.png) no-repeat 42px 10px #51daf8;
-    border-radius: 0 0 5% 5%;
+    border-radius: 0 0 4px 4px;
 }
 
 .contacts li:hover {
@@ -172,7 +179,7 @@ body {
 }
 
 .footer {
-    display:flex;
+    display: flex;
     justify-content: center;
     height: 50px;
     width: 100%;
@@ -244,4 +251,6 @@ body {
     background: #eff3f7;
     width: 650px;
     margin-bottom: 25px;
+    border-radius: 4px;
 }
+
