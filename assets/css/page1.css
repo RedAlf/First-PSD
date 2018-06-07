@@ -2,6 +2,10 @@
     border-radius: 4px 4px 0 0;
 }
 
+.menu_border-a {
+    border-bottom: 2px solid #3ba8c0;
+}
+
 .main-content_main-info_avatar {
     height: 146px;
     width: 146px;

@@ -1,0 +1,119 @@
+.menu_border-a {
+    border-top: 2px solid #3ba8c0;
+}
+
+.menu .active {
+    border-radius: 0 0 4px 4px;
+}
+
+.contact-me-block {
+    min-height: 841px;
+}
+
+.contact-me-block_head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+    height: 122px;
+    background: #48cbe8;
+    color: #ffffff;
+    border-radius: 4px 4px 0 0;
+    border-bottom: 17px solid #67dffa;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 48px auto 50px auto;
+}
+
+.contact-form label {
+    display: flex;
+    flex-flow: column;
+    font-size: 19px;
+    color: #a1a6b3;
+    white-space: nowrap;
+}
+
+.name-form {
+    margin-right: 27px;
+}
+
+.contact-form input,
+.contact-form .message {
+    height: 40px;
+    width: 190px;
+    background: #ffffff;
+    color: #54cee9;
+    border: 1px solid #54cee9;
+    border-radius: 4px;
+    font-size: 15px;
+    padding-left: 7px;
+    margin-bottom: 17px;
+}
+
+.contact-form label textarea.message {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 415px;
+    height: 181px;
+    resize: none;
+    padding-top: 10px;
+}
+
+.capcha-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-flow: column;
+    margin: 0 auto 17px auto;
+    width: 425px;
+}
+
+.capcha-flex_inside {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.capcha-flex_capcha {
+    height: 77px;
+    width: 190px;
+    background: #ffffff url(../img/E0Ed3r.png) no-repeat 50% 50%;
+    border: 1px solid #54cee9;
+    border-radius: 4px;
+}
+
+.buttons-flex {
+    display: flex;
+    width: 425px;
+    justify-content: space-between;
+}
+
+.buttons-flex .button {
+    height: 31px;
+    width: 136px;
+}
+
+.buttons-flex .button:hover {
+    cursor: pointer;
+}
+
+.buttons-flex .send-button {
+    background: #48cbe8;
+    color: #ffffff;
+    border: none;
+    border-bottom: 2px solid #3ba8c0;
+}
+
+.buttons-flex .clear-button {
+    background: #849db5;
+    color: #ffffff;
+    border: none;
+    border-bottom: 2px solid #687b8f;
+}

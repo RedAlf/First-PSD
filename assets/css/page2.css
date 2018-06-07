@@ -80,3 +80,36 @@
 .project-info {
     color: #606972;
 }
+
+.project-pic_shade,
+.project-pic_name {
+    border-radius: 4px;
+    height: 125px;
+    width: 180px;
+}
+
+.project-pic_shade {
+    visibility: hidden;
+    background: #3d8eb9;
+    opacity: 0.85;
+}
+
+.project-pic:hover .project-pic_shade {
+    visibility: visible;
+    cursor: pointer;
+}
+
+.project-pic_name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1.5;
+}
+
+.project-pic_name span {
+    display: block;
+    color: #eff3f7;
+    border: 2px solid #eff3f7;
+    border-radius: 4px;
+    padding: 0 3px 1px 3px;
+}
