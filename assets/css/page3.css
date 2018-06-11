@@ -111,9 +111,17 @@
     border-bottom: 2px solid #3ba8c0;
 }
 
+.buttons-flex .send-button:active {
+    background: #3ba8c0;
+}
+
 .buttons-flex .clear-button {
     background: #849db5;
     color: #ffffff;
     border: none;
     border-bottom: 2px solid #687b8f;
+}
+
+.buttons-flex .clear-button:active {
+    background: #687b8f;
 }
