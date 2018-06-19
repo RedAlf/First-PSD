@@ -67,6 +67,10 @@
     background: url(../img/AddProject.png) no-repeat;
 }
 
+.add-new-project:hover {
+    cursor: pointer;
+}
+
 .main-content_block .projects .add-new-project_text {
     color: #3ba8c0;
 }

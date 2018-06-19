@@ -1,3 +1,8 @@
+@font-face {
+    font-family: FiraSans;
+    src: url(../fonts/Fira_Sans/FiraSans-Regular.ttf);
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -33,7 +38,7 @@ body {
     height: 50px;
     font-size: 23px;
     font-family: "FiraSans";
-    padding-left: 30px;
+    padding-left: 15px;
     padding-top: 25px;
     width: 100%
 }
