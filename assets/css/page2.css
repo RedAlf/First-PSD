@@ -83,6 +83,8 @@
 
 .project-info {
     color: #606972;
+    max-width: 180px;
+    min-height: 38.4px;
 }
 
 .project-pic_shade,
@@ -116,4 +118,8 @@
     border: 2px solid #eff3f7;
     border-radius: 4px;
     padding: 0 3px 1px 3px;
+}
+
+.hiddenFileLoader {
+    display: none;
 }

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./assets/css/header-footer-sidebar.css">
+        <link rel="stylesheet" href="./assets/css/page1.css">
+        <link rel="stylesheet" href="./assets/css/newProject.css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div  class="newProject">
+            <div class="newProject_window">
+                <div class="newProject_window_header">
+                    Добавление проекта
+                    <div class="newProject_window_header_close"></div>
+                </div>
+                <form name="projectForm" method="POST" enctype="multipart/form-data" class="projectForm">
+                    <label>
+                        Название проекта<input name="projectName" type="text" placeholder="Введите название">
+                    </label>
+                    <label>
+                        Картинка проекта<div class="projectImgInputField"><input name="projectImg" class="projectImg" type="text" placeholder="Загрузите изображение">
+                        <div class="projectImg_img"></div></div>
+                    </label>
+                    <label>
+                        URL проекта<input name="projectURL" type="text" placeholder="Добавьте ссылку">
+                    </label>
+                    <label>
+                        Описание<textarea name="description" placeholder="Пара слов о Вашем проекте"></textarea>
+                    </label>
+                    <input class="button add-button" type="submit" name="add" value="Добавить">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

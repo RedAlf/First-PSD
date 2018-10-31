@@ -209,6 +209,7 @@ body {
 }
 
 .footer_login {
+    display: block;
     height: 33px;
     width: 20px;
     background: url(../img/login.png) no-repeat;
@@ -268,4 +269,3 @@ body {
     margin-bottom: 25px;
     border-radius: 4px;
 }
-

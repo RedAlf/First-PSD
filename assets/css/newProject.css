@@ -1,0 +1,132 @@
+.newProjectBG {
+    background: lightgrey repeat;
+    opacity: 0.749;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 50;
+    display: none;
+}
+
+.newProject_window {
+    width: 362px;
+    height: 494px;
+    background-color: #eff3f7;
+    border-radius: 5px;
+    position: fixed;
+    z-index: 51;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: none;
+}
+
+.newProject_window_header {
+    width: 342px;
+    height: 44px;
+    background-color: #48cbe8;
+    color: #ffffff;
+    border-bottom: 9px solid #67dffa;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    border-radius: 5px 5px 0px 0px;
+    font-size: 22px;
+}
+
+.newProject_window_header_close {
+    height: 25px;
+    width: 25px;
+    background: url(../img/close.png) no-repeat;
+    cursor: pointer;
+}
+
+.projectForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 12px auto 22px auto;
+    padding: 0px 21px 0px 21px;
+}
+
+.projectForm label {
+    display: flex;
+    flex-flow: column;
+    font-size: 12px;
+    color: #959aa8;
+    white-space: nowrap;
+    margin-bottom: 12px;
+}
+
+.projectForm input::placeholder,
+.projectForm textarea::placeholder {
+    color: #54cee9;
+}
+
+.projectForm input,
+.projectForm textarea,
+.add-button {
+    width: 318px;
+    height: 39px;
+    border-radius: 3px;
+    border: 1px solid #48cbe8;
+    color: #54cee9;
+    padding: 0px 9px 0px 9px;
+}
+
+.projectForm .projectImg {
+    width: 267px;
+    border-radius: 3px 0px 0px 3px;
+    border-right: none;
+    margin-right: 0px;
+}
+
+.projectImg_img {
+    height: 41px;
+    width: 51px;
+    border-radius: 0px 3px 3px 0px;
+    background: #48cbe8 url(../img/Upload.png) no-repeat 50% 50%;
+    cursor: pointer;
+}
+
+.projectImgInputField {
+    display: flex;
+    flex-flow: nowrap;
+}
+
+.projectForm textarea {
+    padding-top: 9px;
+    height: 109px;
+    resize: none;
+    margin-bottom: 15px;
+}
+
+.projectForm .add-button {
+    background: #48cbe8;
+    color: #ffffff;
+    border: none;
+    border-bottom: 2px solid #3ba8c0;
+    height: 31px;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.add-button:active {
+    background: #3ba8c0;
+}
+
+.projectImg {
+    background: #ffffff;
+}
+
+.hiddenFileLoader {
+    display: none;
+}

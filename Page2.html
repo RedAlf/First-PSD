@@ -3,9 +3,11 @@
     <head>
         <link rel="stylesheet" href="./assets/css/header-footer-sidebar.css">
         <link rel="stylesheet" href="./assets/css/page2.css">
+        <link rel="stylesheet" href="./assets/css/newProject.css">
         <meta charset="utf-8">
     </head>
     <body>
+        <script defer src="./assets/script.js"></script>
         <div class="header">
             <div class="logo"></div>
             <ul class="social">
@@ -80,8 +82,32 @@
         </div>
         <div class="footer-border"></div>
         <div class="footer">
-            <div class="footer_login"></div>
+            <a href="./Page4.html" class="footer_login"></a>
             <span>© 2015, Это мой сайт, пожалуйста, не копируйте и не воруйте его</span>
         </div>
+        <div  class="newProjectBG">
+        </div>
+            <div class="newProject_window">
+                <div class="newProject_window_header">
+                    Добавление проекта
+                    <div class="newProject_window_header_close"></div>
+                </div>
+                <form name="projectForm" method="POST" enctype="multipart/form-data" class="projectForm">
+                    <label>
+                        Название проекта<input name="projectName" type="text" placeholder="Введите название">
+                    </label>
+                    <label>
+                        Картинка проекта<div class="projectImgInputField"><input name="projectImg" class="projectImg" type="text" placeholder="Загрузите изображение" disabled>
+                        <div class="projectImg_img"></div></div><input type="file" id="fileloader" class="hiddenFileLoader" name="hiddenFileLoader">
+                    </label>
+                    <label>
+                        URL проекта<input name="projectURL" type="text" placeholder="Добавьте ссылку">
+                    </label>
+                    <label>
+                        Описание<textarea name="description" placeholder="Пара слов о Вашем проекте"></textarea>
+                    </label>
+                    <div class="button add-button">Добавить</div>
+                </form>
+            </div>
     </body>
 </html>
