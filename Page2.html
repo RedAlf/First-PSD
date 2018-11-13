@@ -7,7 +7,6 @@
         <meta charset="utf-8">
     </head>
     <body>
-        <script defer src="./script.js"></script>
         <div class="header">
             <div class="logo"></div>
             <ul class="social">
@@ -85,6 +84,7 @@
             <a href="./Page4.html" class="footer_login"></a>
             <span>© 2015, Это мой сайт, пожалуйста, не копируйте и не воруйте его</span>
         </div>
+        <script defer src="./script.js"></script>
         <div  class="newProjectBG">
         </div>
             <div class="newProject_window">
@@ -94,17 +94,24 @@
                 </div>
                 <form name="projectForm" method="POST" enctype="multipart/form-data" class="projectForm">
                     <label>
-                        Название проекта<input name="projectName" type="text" placeholder="Введите название">
+                        Название проекта
+                        <input name="projectName" type="text" placeholder="Введите название">
                     </label>
                     <label>
-                        Картинка проекта<div class="projectImgInputField"><input name="projectImg" class="projectImg" type="text" placeholder="Загрузите изображение" disabled>
-                        <div class="projectImg_img"></div></div><input type="file" id="fileloader" class="hiddenFileLoader" name="hiddenFileLoader">
+                        Картинка проекта
+                        <div class="projectImgInputField">
+                            <input name="projectImg" class="projectImg" type="text" placeholder="Загрузите изображение" disabled>
+                            <div class="projectImg_img"></div>
+                        </div>
+                        <input type="file" id="fileloader" class="hiddenFileLoader" name="hiddenFileLoader">
                     </label>
                     <label>
-                        URL проекта<input name="projectURL" type="text" placeholder="Добавьте ссылку">
+                        URL проекта
+                        <input name="projectURL" type="text" placeholder="Добавьте ссылку">
                     </label>
                     <label>
-                        Описание<textarea name="description" placeholder="Пара слов о Вашем проекте"></textarea>
+                        Описание
+                        <textarea name="description" placeholder="Пара слов о Вашем проекте"></textarea>
                     </label>
                     <div class="button add-button">Добавить</div>
                 </form>

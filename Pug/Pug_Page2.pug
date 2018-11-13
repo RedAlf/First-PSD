@@ -1,0 +1,61 @@
+doctype html
+html
+    include ./includes/Pug_Head
+    body
+        include ./includes/Pug_Header
+        .main-flexbox
+            div(class="main-content clearfix")
+                include ./includes/Pug_LeftMenu
+                div(class="main-content_block my-works")
+                    h1(class="main-content_block_head") Мои работы
+                    ul(class="projects")
+                        li(class="project")
+                            div(class="project-pic project1")
+                                .project-pic_shade
+                                    .project-pic_name
+                                        span название
+                            span(class="project-adress") www.site.ru
+                            span(class="project-info") Информация о проекте 1 превью 2 строки
+                        li(class="project")
+                            div(class="project-pic project2")
+                                .project-pic_shade
+                                    .project-pic_name
+                                        span название
+                            span(class="project-adress") www.site.ru
+                            span(class="project-info") Информация о проекте 2 превью 2 строки
+                        li(class="project")
+                            div(class="project-pic project3")
+                                .project-pic_shade
+                                    .project-pic_name
+                                        span название
+                            span(class="project-adress") www.site.ru
+                            span(class="project-info") Информация о проекте 3 превью 2 строки
+                        li(class="project")
+                            div(class="project-pic project4")
+                                .project-pic_shade
+                                    .project-pic_name
+                                        span название
+                            span(class="project-adress") www.site.ru
+                            span(class="project-info") Информация о проекте 4 превью 2 строки
+                        li(class="project add-new-project")
+                            .add-new-project_img
+                            span(class="add-new-project_text") Добавить проект
+        include ./includes/Pug_Footer
+        .newProjectBG
+        .newProject_window
+            .newProject_window_header Добавление проекта
+                .newProject_window_header_close
+            form(name="projectForm" method="POST" enctype="multipart/form-data" class="projectForm")
+                label Название проекта
+                    input(name="projectName" type="text" placeholder="Введите название")
+                label Картинка проекта
+                    .projectImgInputField
+                        input(name="projectImg" class="projectImg" type="text" placeholder="Загрузите изображение" disabled)
+                        .projectImg_Img
+                    input(type="file" id="fileloader" class="hiddenFileLoader" name="hiddenFileLoader")
+                label URL проекта
+                    input(name="projectURL" type="text" placeholder="Добавьте ссылку")
+                label Описание
+                    textarea(name="description" placeholder="Пара слов о вашем проекте")
+                div(class="button add-button") Добавить
+            
