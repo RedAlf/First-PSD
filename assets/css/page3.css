@@ -125,3 +125,8 @@
 .buttons-flex .clear-button:active {
     background: #687b8f;
 }
+
+input::placeholder,
+textarea::placeholder {
+    color: #54cee9;
+}

@@ -1,0 +1,27 @@
+doctype html
+html
+    include ./includes/Pug_Head
+    body
+        include ./includes/Pug_Header
+        .header-border
+        .main-flexbox
+        div(class="main-content clearfix")
+            include ./includes/Pug_LeftMenu
+            div(class="main-content_block contact-me-block")
+                .contact-me-block_head У вас интересный проект? Напишите мне
+                form(name="name" method="POST" class="contact-form")
+                    label Имя
+                        input(class="name-form" type="text" name="name" placeholder="Как к Вам обращаться")
+                    label Email
+                        input(type="text" name="email" placeholder="Куда мне писать")
+                    label Сообщение
+                        input(textarea class="message" name="message" placeholder="Кратко в чем суть")
+                    .capcha-flex
+                        label Введите код, указанный на картинке
+                        .capcha-flex_inside
+                            .capcha-flex_capcha
+                            input(class="capcha-input" type="text" name="capcha" placeholder="Введите код")
+                    .buttons-flex
+                        input(class="button send-button" name="send" type="submit" value="Отправить")
+                        input(class="button clear-button" name="clear" type="button" value="Очистить")
+        include ./includes/Pug_Footer
