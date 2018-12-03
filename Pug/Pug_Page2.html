@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../assets/css/header-footer-sidebar.css">
+    <link rel="stylesheet" href="../assets/css/page1.css">
+    <link rel="stylesheet" href="../assets/css/page2.css">
+    <link rel="stylesheet" href="../assets/css/page3.css">
+    <link rel="stylesheet" href="../assets/css/page4.css">
+    <link rel="stylesheet" href="../assets/css/newProject.css">
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo"></div>
+      <ul class="social">
+        <li class="vk"><a href="https://vk.com/psheeeeeeeeee"></a></li>
+        <li class="tw"></li>
+        <li class="fb"></li>
+        <li class="gh"><a href="https://github.com/RedAlf"></a></li>
+      </ul>
+    </div>
+    <div class="header-border"></div>
+    <div class="main-flexbox">
+      <div class="main-content clearfix">
+        <div class="main-content_left">
+          <ul class="menu">
+            <li class="active"><a>Обо мне</a></li>
+            <li><a class="menu_border-a inactive" href="./Page2.html">Мои работы</a></li>
+            <li><a class="inactive" href="./Page3.html">Связаться со мной</a></li>
+          </ul>
+          <ul class="contacts">
+            <li class="contacts_head">Контакты</li>
+            <li class="contacts_post">pochta@mail.ru</li>
+            <li class="contacts_phone">+79812342323</li>
+            <li class="contacts_skype">nickname</li>
+          </ul>
+        </div>
+        <div class="main-content_block my-works">
+          <h1 class="main-content_block_head">Мои работы</h1>
+          <ul class="projects">
+            <li class="project">
+              <div class="project-pic project1">
+                <div class="project-pic_shade">
+                  <div class="project-pic_name"><span>название</span></div>
+                </div>
+              </div><span class="project-adress">www.site.ru</span><span class="project-info">Информация о проекте 1 превью 2 строки</span>
+            </li>
+            <li class="project">
+              <div class="project-pic project2">
+                <div class="project-pic_shade">
+                  <div class="project-pic_name"><span>название</span></div>
+                </div>
+              </div><span class="project-adress">www.site.ru</span><span class="project-info">Информация о проекте 2 превью 2 строки</span>
+            </li>
+            <li class="project">
+              <div class="project-pic project3">
+                <div class="project-pic_shade">
+                  <div class="project-pic_name"><span>название</span></div>
+                </div>
+              </div><span class="project-adress">www.site.ru</span><span class="project-info">Информация о проекте 3 превью 2 строки</span>
+            </li>
+            <li class="project">
+              <div class="project-pic project4">
+                <div class="project-pic_shade">
+                  <div class="project-pic_name"><span>название</span></div>
+                </div>
+              </div><span class="project-adress">www.site.ru</span><span class="project-info">Информация о проекте 4 превью 2 строки</span>
+            </li>
+            <li class="project add-new-project">
+              <div class="add-new-project_img"></div><span class="add-new-project_text">Добавить проект</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-border"></div>
+    <div class="footer"><a class="footer_login" href="./Page4.html"></a><span>© 2015, Это мой сайт, пожалуйста, не копируйте и не воруйте его</span></div><script defer src="./assets/script.js"></script>
+    <div class="newProjectBG"></div>
+    <div class="newProject_window">
+      <div class="newProject_window_header">Добавление проекта
+        <div class="newProject_window_header_close"></div>
+      </div>
+      <form class="projectForm" name="projectForm" method="POST" enctype="multipart/form-data">
+        <label>Название проекта
+          <input name="projectName" type="text" placeholder="Введите название">
+        </label>
+        <label>Картинка проекта
+          <div class="projectImgInputField">
+            <input class="projectImg" name="projectImg" type="text" placeholder="Загрузите изображение" disabled>
+            <div class="projectImg_Img"></div>
+          </div>
+          <input class="hiddenFileLoader" type="file" id="fileloader" name="hiddenFileLoader">
+        </label>
+        <label>URL проекта
+          <input name="projectURL" type="text" placeholder="Добавьте ссылку">
+        </label>
+        <label>Описание
+          <textarea name="description" placeholder="Пара слов о вашем проекте"></textarea>
+        </label>
+        <div class="button add-button">Добавить</div>
+      </form>
+    </div>
+  </body>
+</html>
