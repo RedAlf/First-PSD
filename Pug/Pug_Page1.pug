@@ -1,3 +1,18 @@
+- var skills = ['html', 'css', 'javascript', 'gulp', 'git']
+- var firstWorkplace = '"ИП Боровицкий" - Продавец дисков'
+- var firstWorktime = 'Сентябрь 2005 - Август 2008'
+- var secondWorkplace = '"ООО Системы безопасности" - Системный администратор'
+- var secondWorktime = 'Июнь 2008 - Июль 2010'
+- var job_1 = {
+        workplace: firstWorkplace
+        worktime: firstWorktime
+    }
+- var job_2 = {
+        workplace: secondWorkplace
+        worktime: secondWorktime
+    }
+- var workplaces [job_1, job_2]
+
 doctype html
 html
     include ./includes/Pug_Head.pug
@@ -13,25 +28,19 @@ html
                         li #[b Меня зовут:] Иванов Андрей Степанович
                         li #[b Мой возраст:] 25 лет
                         li #[b Мой город:] Санкт-Петербург, Россия
-                        li #[b Моя специялизациия:] FRONTEND разработчик
+                        li #[b Моя специализация:] FRONTEND разработчик
                         li #[b Ключевые навыки:]
-                            ul(class="main-content_mmain-info_info_skills")
-                                li(class="main-content_main-info_info_skills_skill") html
-                                li(class="main-content_main-info_info_skills_skill") css
-                                li(class="main-content_main-info_info_skills_skill") javascript
-                                li(class="main-content_main-info_info_skills_skill") gulp
-                                li(class="main-content_main-info_info_skills_skill") git
+                            ul(class="main-content_main-info_info_skills")
+                                each skill in skills
+                                    li(class="main-content_main-info_info_skills_skill")= skill
                 div(class="main-content_block main-content_experience")
                     h1(class="main-content_block_head") Опыт работы 
                     ul(class="main-content_experience_workplaces")
-                        li(class="main-content_experience_workplaces_workplace-element")
-                            div(class="main-content_experience_workplaces_workplace-element_img")
-                            span(class="main-content_experience_workplaces_workplace-element_workplace") "ИП Боровицкий" - Продавец дисков
-                            span(class="main-content_experience_workplaces_workplace-element_time") Сентябрь 2005 - Август 2008
-                        li(class="main-content_experience_workplaces_workplace-element")
-                            div(class="main-content_experience_workplaces_workplace-element_img")
-                            span(class="main-content_experience_workplaces_workplace-element_workplace") "ООО Системы безопасности" - Системный администратор
-                            span(class="main-content_experience_workplaces_workplace-element_time") Июнь 2008 - Июль 2010
+                        each obj in workplaces
+                            li(class="main-content_experience_workplaces_workplace-element")
+                                div(class="main-content_experience_workplaces_workplace-element_img")
+                                span(class="main-content_experience_workplaces_workplace-element_workplace")= obj.workplace
+                                span(class="main-content_experience_workplaces_workplace-element_time")= obj.worktime
                 div(class="main-content_block main-content_education")
                     h1(class="main-content_block_head") Образование
                     ul(class="main-content_education_places")

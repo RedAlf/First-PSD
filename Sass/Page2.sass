@@ -1,0 +1,107 @@
+.my-works
+    min-height: 841px
+
+.main-content_block
+    .projects
+        list-style: none
+        margin: 0
+        padding: 0
+        display: flex
+        flex-wrap: wrap
+        width: 650px
+        padding-left: 21px
+
+        .project
+            display: inline-block
+            height: 200px
+            width: 180px
+            border-radius: 4px
+            margin-right: 30px
+            margin-bottom: 45px
+            text-align: center
+            
+            span
+                display: flex
+                align-items: center
+                justify-content: center
+
+        .add-new-project
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-flow: column
+            border: 2px dotted #3ba8c0
+            height: 125px
+            background: #edf8fc
+
+            :hover
+                cursor: pointer
+        
+        .add-new-project_img
+            width: 35px
+            height: 35px
+            background: url(../assets/img/AddProject.png) no-repeat
+
+        .add-new-project_text
+            color: #3ba8c0
+
+.project-pic
+    border: 2px solid #3ba8c0
+    border-radius: 4px
+    height: 125px
+    width: 180px
+
+.project1
+    background: url(../assets/img/project1.png) no-repeat
+
+.project2
+    background: url(../assets/img/project2.png) no-repeat
+
+.project3
+    background: url(../assets/img/project3.png) no-repeat
+
+.project4
+    background: url(../assets/img/project4.png) no-repeat
+
+.project-adress
+    font-style: italic
+    color: #3ba8c0
+    height: 30px
+
+.project-info
+    color: #606972
+    max-width: 180px
+    min-height: 38.4px
+
+.project-pic_shade,
+.project-pic_name
+    border-radius: 4px
+    height: 125px
+    width: 180px
+
+.project-pic_shade
+    visibility: hidden
+    background: #3d8eb9
+    opacity: 0.85
+
+.project-pic
+    :hover
+        .project-pic_shade
+            visibility: visible
+            cursor: pointer
+
+.project-pic_name
+    display:flex
+        justify-content: center
+        align-items: center
+        opacity: 1.5
+
+    span
+        display: block
+        color: #eff3f7
+        border: 2px solid #eff3f7
+        border-radius: 4px
+        padding: 0 3px 1px 3px
+
+.hiddenFileLoader
+    display: none

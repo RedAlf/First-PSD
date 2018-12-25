@@ -9,34 +9,15 @@ html
                 div(class="main-content_block my-works")
                     h1(class="main-content_block_head") Мои работы
                     ul(class="projects")
-                        li(class="project")
-                            div(class="project-pic project1")
-                                .project-pic_shade
-                                    .project-pic_name
-                                        span название
-                            span(class="project-adress") www.site.ru
-                            span(class="project-info") Информация о проекте 1 превью 2 строки
-                        li(class="project")
-                            div(class="project-pic project2")
-                                .project-pic_shade
-                                    .project-pic_name
-                                        span название
-                            span(class="project-adress") www.site.ru
-                            span(class="project-info") Информация о проекте 2 превью 2 строки
-                        li(class="project")
-                            div(class="project-pic project3")
-                                .project-pic_shade
-                                    .project-pic_name
-                                        span название
-                            span(class="project-adress") www.site.ru
-                            span(class="project-info") Информация о проекте 3 превью 2 строки
-                        li(class="project")
-                            div(class="project-pic project4")
-                                .project-pic_shade
-                                    .project-pic_name
-                                        span название
-                            span(class="project-adress") www.site.ru
-                            span(class="project-info") Информация о проекте 4 превью 2 строки
+                        each projectNum, num in {1:'project1', 2:'project2', 3:'project3', 4:'project4'}
+                            li(class="project")
+                                div(class=["project-pic", projectNum])
+                                    .project-pic_shade
+                                        .project-pic_name
+                                            span название
+                                span(class="project-adress") www.site.ru
+                                span(class="project-info") Информация о проекте #{num} превью 2 строки
+                        
                         li(class="project add-new-project")
                             .add-new-project_img
                             span(class="add-new-project_text") Добавить проект
